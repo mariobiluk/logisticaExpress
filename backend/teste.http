@@ -1,0 +1,33 @@
+### teste cadastro de funcionario
+
+POST http://localhost:3000/funcionario
+Content-Type: application/json
+
+{
+    "nome": "mario",
+    "email":"mario@gmail",
+    "senha": "abc"
+}
+
+### teste de login com funcionario
+# @name loginReq
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"mario@gmail",
+    "senha": "abc"
+}
+
+### teste de cadastro de motorista - rota privada
+
+POST http://localhost:3000/motorista
+Content-Type: application/json
+Authorization: {{loginReq.response.body.token}}
+
+{
+    "nome": "Eliel",
+    "cnh": "123",
+    "cpf": "12345678990",
+    "telefone": "48999998888"
+}
