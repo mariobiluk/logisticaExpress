@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/cadastrarEntrega.js" defer></script>
+    <title>Cadastro de entrega no sistema</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>&emsp;
+            <a href="./login.html">Login</a>&emsp;
+        </nav>
+    </header>
+    <main>
+        <h1>Cadastro de entrega no sistema</h1>
+
+        <form>
+            <label for="cidadeDestino">cidade de Destino</label>
+            <input type="text" id="cidadeDestino" placeholder="cidadeDestino" required><br><br>
+
+            <label for="statusAtual">status Atual</label>
+            <input type="text" id="statusAtual" placeholder="statusAtual" required><br><br>
+
+            <label for="dataHora">data e Hora</label>
+            <input type="datetime-local" id="dataHora" placeholder="dataHora" required >
+
+            <label for="idCarga">Código da carga</label>
+            <input type="text" id="idCarga" placeholder="idCarga" required >
+
+            <button id="btn_cadastrar">Cadastrar</button>
+        </form>
+
+        <div id="resposta" class="resposta"></div>
+    </main>
+    
+</body>
+</html>

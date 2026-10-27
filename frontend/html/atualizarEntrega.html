@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/atualizarEntrega.js" defer></script>
+    <title>Atualizar Entrega</title>
+</head>
+<body>
+    <header>
+        <nav><a href="../index.html">Home</a></nav>
+        <br><hr><br>
+    </header>
+    <main>
+        <h1>Atualizar Entrega</h1>
+        <form>
+            <label for="id">Código da Entrega</label>
+            <input type="number" id="id" required><br><br>
+
+            <label for="cidadeDestino">cidade Destino</label>
+            <input type="text" id="cidadeDestino" required><br><br>
+
+            <label for="statusAtual">status Atual</label>
+            <input type="text" id="statusAtual" required><br><br>
+
+            <label for="dataHora">data Hora</label>
+            <input type="datetime-local" id="dataHora" required><br><br>
+
+            <label for="idCarga">Código da Carga</label>
+            <input type="number" id="idCarga" required><br><br>
+
+            <button id="btn_atualizar">Atualizar</button>
+        </form>
+        <div id="resposta" class="resposta"></div>
+    </main>
+</body>
+</html>

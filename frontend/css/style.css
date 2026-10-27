@@ -1,0 +1,166 @@
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e navegação */
+header {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 10px 5px 0;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+.titulo_nav {
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* Formulários */
+form {
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+}
+
+/* Botões */
+button {
+    padding: 11px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Mensagens de resposta */
+.resposta {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.resposta p {
+    margin: 10px 0;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f1f5f9;
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    main {
+        margin: 20px 12px;
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    nav a {
+        margin-right: 8px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

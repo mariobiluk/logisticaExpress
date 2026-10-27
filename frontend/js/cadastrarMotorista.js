@@ -1,5 +1,9 @@
 const token = localStorage.getItem('token')
 
+if (!token) {
+    location.href = '../index.html'
+}
+
 const resposta = document.getElementById('resposta')
 const btn_cadastrar = document.getElementById('btn_cadastrar')
 

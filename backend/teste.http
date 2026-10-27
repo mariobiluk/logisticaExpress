@@ -31,3 +31,70 @@ Authorization: {{loginReq.response.body.token}}
     "cpf": "12345678990",
     "telefone": "48999998888"
 }
+
+### Listar Todos os motorista (Privado)
+GET http://localhost:3000/motoristas
+Authorization: {{loginReq.response.body.token}}
+
+### Consultar motorista por ID (Privado)
+GET http://localhost:3000/motorista/1
+Authorization: {{loginReq.response.body.token}}
+
+### 10. Atualizar motorista 2(Privado)
+PUT http://localhost:3000/motorista/1
+Content-Type: application/json
+Authorization: {{loginReq.response.body.token}}
+
+{
+    "nome": "Marcos",
+    "cnh": "789",
+    "cpf": "98765432114",
+    "telefone": "48999998888"
+}
+
+### 22. Deletar motorista
+DELETE http://localhost:3000/motorista/2
+Authorization: {{loginReq.response.body.token}}
+
+### teste de cadastro de carga - rota privada
+
+POST http://localhost:3000/carga
+Content-Type: application/json
+Authorization: {{loginReq.response.body.token}}
+
+{
+    "descricao": "urnas eletronicas",
+    "peso": 7.5,
+    "volume": 22.7,
+    "codRastreio": 3565,
+    "idMotorista": 3
+}
+
+### teste de cadastro de entrega - rota privada
+
+POST http://localhost:3000/entrega
+Content-Type: application/json
+Authorization: {{loginReq.response.body.token}}
+
+{
+    "cidadeDestino": "Tijucas",
+    "statusAtual": "TRANSITO",
+    "dataHora": "2026-10-27 14:30:00",
+    "idCarga": 2
+}
+
+### Listar Todos as entregas ordenadas (Privado)
+GET http://localhost:3000/entregas
+Authorization: {{loginReq.response.body.token}}
+
+### 10. Atualizar entrega (Privado)
+PUT http://localhost:3000/entrega/2
+Content-Type: application/json
+Authorization: {{loginReq.response.body.token}}
+
+{
+    "cidadeDestino": "Porto Belo",
+    "statusAtual": "TRANSITO",
+    "dataHora": "2026-11-27 14:30:00",
+    "idCarga": 2
+}
